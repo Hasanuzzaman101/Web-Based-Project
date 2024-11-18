@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+
+}
+html{
+    background-color: #fdfdfd;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(11, 11, 56);
+    color: white;
+    position: sticky;
+    padding: 2rem 1rem;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+
+  }
+  .logo_figure{
+    border: 1px solid white;
+  }
+  .logo{
+    font-size: 4rem;
+  }
+  nav li{
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    transition: all 0.4s;
+  }
+  nav li :last-child{
+    margin: 0;
+  }
+  nav li:hover{
+    background-color: rgb(5, 237, 5);
+    border-radius: 0.6rem;
+
+  }
+  .link{
+    font-size: 1.8rem;
+    color:white;
+    cursor: pointer;
+  }
+  @media(max-width:600px){
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav ul{
+       padding-left: 2.5rem;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+    #banner{
+        min-height: auto;
+    }
+    #banner article{
+        width: 90%;
+    }
+    .card-container{
+        width: 90%;
+       
+    }
+    .col_sm1{
+       width: 8.33%; 
+    }
+    .col_sm2{
+        width: 16.66%;
+    }
+    .col_sm3{
+        width: 25%;
+    }
+    .col_sm4{
+        width: 33.33%;
+    }
+    .col_sm5{
+        width: 41.33%;
+    }
+    .col_sm6{
+        width: 50%;
+    }
+    .col_sm7{
+        width: 58.33%;
+    }
+    .col_sm8{
+       width: 66.67%; 
+    }
+    .col_sm9{
+       width: 75%; 
+    }
+    .col_sm11{
+      width: 83.33%;
+    }
+    .col_sm11{
+      width: 91.66%;  
+    }
+    .col_sm12{
+       width: 100%; 
+    }
+    
+}
+@media(min-width:768px){
+    .col_mid1{
+       width: 8.33%; 
+    }
+    .col_mid2{
+        width: 16.66%;
+    }
+    .col_mid3{
+        width: 25%;
+    }
+    .col_mid4{
+        width: 33.33%;
+    }
+    .col_mid5{
+        width: 41.33%;
+    }
+    .col_mid6{
+        width: 50%;
+    }
+    .col_mid7{
+        width: 58.33%;
+    }
+    .col_mid8{
+       width: 66.67%; 
+    }
+    .col_mid9{
+       width: 75%; 
+    }
+    .col_mid10{
+      width: 83.33%;
+    }
+    .col_mid11{
+      width: 91.66%;  
+    }
+    .col_mid12{
+       width: 100%; 
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 55.5%;
+    }
+    #banner article{
+        width: 80%;
+    }
+    .card-container{
+        width: 80%;
+        
+    }
+   
+    .col_mid1{
+       width: 8.33%; 
+    }
+    .col_mid2{
+        width: 16.66%;
+    }
+    .col_mid3{
+        width: 25%;
+    }
+    .col_mid4{
+        width: 33.33%;
+    }
+    .col_mid5{
+        width: 41.33%;
+    }
+    .col_mid6{
+        width: 50%;
+    }
+    .col_mid7{
+        width: 58.33%;
+    }
+    .col_mid8{
+       width: 66.67%; 
+    }
+    .col_mid9{
+       width: 75%; 
+    }
+    .col_mid10{
+      width: 83.33%;
+    }
+    .col_mid11{
+      width: 91.66%;  
+    }
+    .col_mid12{
+       width: 100%; 
+    }
+}
+@media(max-width:992px){
+    #banner{
+        flex-direction: column;
+    }
+    #banner article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .card-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+        flex-wrap: wrap;
+    }
+    .col_large1{
+        width: 8.33%; 
+     }
+     .col_large2{
+         width: 16.66%;
+     }
+     .col_large3{
+         width: 25%;
+     }
+     .col_large4{
+         width: 33.33%;
+     }
+     .col_large5{
+         width: 41.33%;
+     }
+     .col_large6{
+         width: 50%;
+     }
+     .col_large7{
+         width: 58.33%;
+     }
+     .col_large8{
+        width: 66.67%; 
+     }
+     .col_large9{
+        width: 75%; 
+     }
+     .col_large10{
+       width: 83.33%;
+     }
+     .col_large11{
+       width: 91.66%;  
+     }
+     .col_large12{
+        width: 100%; 
+     }
+}
+#banner{
+    padding:5rem 1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+#banner article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+#banner aside{
+    flex-basis:50% ;
+    text-align: center;
+}
+.bannerh{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 3.9rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: white;
+}
+.bannerp{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+.banner_image{
+    width: 55rem;
+    height: 55rem;
+    border: 0.4rem solid;
+    border-radius: 50%;
+}
+.whit{
+    color: white;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.section-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: "Italiano",cursive;
+}
+#about{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+    background-color: #4c4c4c;
+   
+}
+.card-container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: blueviolet;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.cardh{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.card_desc{
+    padding: o.4rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5.4rem;
+}
+.card_btn{
+    align-self: center;
+    width: 50%;
+}
+.btn{
+    background-color: rgb(253, 184, 8);
+    border: none;
+    border-radius: 20%;
+    box-shadow: 0.13rem 0.13rem 0.13rem #222;
+    cursor: pointer;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 1rem 0;
+}
